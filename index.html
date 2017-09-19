@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This tells the browser how to read the document. -->
+    <meta charset="utf-8">
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Resume</title>
+    <!-- Load the google font. -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <!-- Load the page styles. -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Add fontawesome url-->
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <!-- add an interactive Google Map to your resume!-->
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <div id="main">
+        <header id="header" class="center-content clear-fix">
+            <div class="dropdown">
+                <button onclick="mydrpdown()" id="dropbtn" class="fa fa-bars" aria-hidden="true"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#WorkExperience">Work Experiences</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#mapDiv">I lived and worked there</a>
+                </div>
+            </div>
+            <hr>
+            <ul id="topContacts" class="flex-box"></ul>
+        </header>
+        <div style="clear: both;"></div>
+        <div id="workExperience" class="gray">
+            <h2>Work Experience</h2>
+        </div>
+        <div id="projects">
+            <div id="projectsheader">
+                <a class="fa fa-arrow-left" aria-hidden="true"></a>
+                <h2> Projects</h2>
+                <a class="fa fa-arrow-right" aria-hidden="true"></a>
+            </div>
+        </div>
+        <div id="footerproject">
+        </div>
+        <div id="education" class="gray">
+            <h2>Education</h2>
+        </div>
+        <div id="mapDiv">
+            <h2>Where I've Lived and Worked</h2>
+        </div>
+        <div id="lets-connect" class="dark-gray">
+            <h2 class="orange center-text">Let's Connect</h2>
+            <ul id="footerContacts" class="flex-box">
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/resumeBuilder.js"></script>
+    <!-- If you have not made any changes to a section
+  of the resume, then that part of the resume does not show up.
+  -->
+    <script>
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
