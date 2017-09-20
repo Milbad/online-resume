@@ -1,4 +1,4 @@
-# Classic Arcade Game Clone Project #
+# Online Resume Project #
 Fifth project from the Front-End Web Developer Nanodegree in [Udacity](https://udacity.com):
 In this project I stored my resume data in four javaScript objects, each one representing a different resume section.
 ## How to run the game ##
