@@ -169,7 +169,7 @@ education.display = function() {
         education.onlineCourses.forEach(function(onlineCourse) {
             $("#education").append(HTMLschoolStart);
             var formattedSchoolTitle = HTMLonlineTitle.replace("%data%", onlineCourse.title) + HTMLonlineSchool.replace("%data%", onlineCourse.school);
-            $(".education-entry:last").append(formattedSchoolTitle,HTMLonlineDates.replace("%data%", onlineCourse.dates),HTMLonlineURL.replace("%data%", onlineCourse.url));
+            $(".education-entry:last").append(formattedSchoolTitle,HTMLonlineDates.replace("%data%", onlineCourse.dates),HTMLonlineURL.replace("%data%", onlineCourse.url).replace("%data1%", onlineCourse.url));
         });
     }
 };

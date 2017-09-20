@@ -44,7 +44,7 @@ var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a>%data%';
 var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineURL = '<br><a href="%data1%">%data%</a>';
 
 var internationalizeButton = '<button class="interbtn"></button>';
 var googleMap = '<div id="map"></div>';
