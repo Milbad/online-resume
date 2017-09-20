@@ -7,7 +7,7 @@ var bio = {
     "contacts": {
         "mobile": "(650)-XXX-XXXX",
         "email": "badouxmilene@gmail.com",
-        "github": "",
+        "github": "https://github.com/Milbad/",
         "twitter":"",
         "location": "Los Altos, CA"
     },
