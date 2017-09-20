@@ -11,7 +11,7 @@ var bio = {
         "twitter":"",
         "location": "Los Altos, CA"
     },
-    "skills": ["HTML", "Javascript", "CSS", "VBA Developemt", "QA testing (iOS and Android)"]
+    "skills": ["HTML5", "CSS", "Javascript", "AJAX","Bootstrap", "JQuery", "React", "Redux", "Knockout","Git", "VBA", "QA testing (iOS and Android)"]
 };
 bio.display = function() {
         $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage),HTMLbioPic.replace("%data%", bio.biopic));
@@ -31,20 +31,24 @@ bio.display = function() {
 var projectclick = 0;
 var projects = {
     "projects": [{
-        "title": "Portfolio",
-        "dates": "09/2016",
-        "description": "This was my final project for the HTML, CSS and responsive design lessons.",
-        "images": ["images/portfolio.jpg"]
+        "title": "Readable",
+        "dates": "Sep 2017",
+        "description": "This is a social content and discussion web app that allows users to submit content in addition to voting and commenting. \
+        I leveraged React to build a dynamic user interface, as well as Redux to manage global application state.\
+        I completed this project one month before the due date.",
+        "images": ["images/readable.png"]
     }, {
-        "title": "Responsive design",
-        "dates": "09/2016",
-        "description": "This was my third project. I learned a lot about responsive design.",
-        "images": ["images/responsive.jpg"]
+        "title": "My Reads",
+        "dates": "Aug 2017",
+        "description": "This is a responsive web app that allows users to select and categorize books into a virtual bookshelf.\
+        I leveraged React to support a dynamic user interface that interacts with an API server and client library.\
+        Collaborated through Slack with other students and delivered this app one month before the projected completion date.",
+        "images": ["images/my-reads.png"]
     }, {
-        "title": "Animal Trading card",
-        "dates": "09/2016",
-        "description": "This was my first project. I learned a lot about CSS and HTML.",
-        "images": ["images/animal.jpg"]
+        "title": "Classic Arcade Game Clone",
+        "dates": "Oct 2016",
+        "description": "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.",
+        "images": ["images/game.png"]
     }]
 
 };
@@ -66,29 +70,33 @@ projects.display =function() {
 /*WORK EXPERIENCE*/
 var work = {
     "jobs": [{
-        "title": "French Linguist",
+        "title": "Localization QA - French Linguist",
         "employer": "Menlo Technologies",
-        "dates": "01/2014-05/2016",
+        "dates": "Feb 2015- May 2016",
         "location": "Cupertino",
-        "description": "QA TESTING. On site at Fortune 100 Company in Cupertino,CA. Performing iOs and Android testing in order to identify layout, linguistic or functional bugs. Bugs reported, tracked and verified. <br> FRENCH TRANSLATION. Strings translated from English to French."
+        "description": "Performed iOS and Android testing to identify layout, linguistic or functional bugs on site at Fortune 100 Company.\
+        Translated strings from English to French."
     }, {
         "title": "Analyst",
         "employer": "CGI",
-        "dates": "2011-2014",
-        "location": "Pau",
-        "description": "THIRD PARTY APPLICATION MAINTENANCE, TOTAL S.A. and EADS. Participation in the analysis and development (VBA Access and Excel ) of several applications. <br> IT APPLICATION MANAGER ASSISTANT, TOTAL SA. System administrator of GISEH software (Total S.A. access control): user support and assistance for upgrades and new functionalities implementations"
+        "dates": "Sep 2011 - Jan 2015",
+        "location": "Pau (France)",
+        "description": "Analyzed, maintained and developed six VBA Access and Excel apps for multinationals.\
+        Supported and assisted users during upgrades and new functionality implementations."
     }, {
         "title": "Ads Quality Rater",
         "employer": "WORKFORCELOGIC",
-        "dates": "08/2010-02/2011",
+        "dates": "Aug 2010- Feb 2011",
         "location": "Menlo Park",
         "description": " Qualitative evaluation of web pages based on Google’s criteria. "
     }, {
         "title": "Development engineer",
         "employer": "BULL SAS",
-        "dates": "2008-2010",
-        "location": "Toulouse",
-        "description": "Management of applications for EDF (French electricity company) call centers. In charge of operational maintenance and software upgrades, telephone network and IVR (Interactive Voice Response), functional tests, user support and incident solving. "
+        "dates": "Jan 2008- Apr 2010",
+        "location": "Toulouse (France)",
+        "description": "Maintained and managed applications for nationwide call centers.\
+        Participated in functional tests, user support and incident solving.\
+        Successfully organized two operational upgrades for the telephony network and the IVR (Interactive Voice Response)system"
     }],
 };
 
@@ -105,34 +113,41 @@ work.display = function() {
 /*EDUCATION*/
 var education = {
     "schools": [{
-        "name": "University Toulouse 2",
-        "dates": "2007",
-        "location": "Toulouse",
+        "name": "Toulouse 2 University",
+        "dates": "Jun 2007",
+        "location": "Toulouse (France)",
         "majors": ["Cognitive ergonomics and linguistic engineering"],
         "degree": "MASTER",
         "url": "http://www.univ-tlse2.fr/accueil/formation-insertion/odf-2016-2020/master-ergonomie-cognitive-innovations-technologiques-et-facteurs-humains-ecit-fh--386412.kjsp"
     }, {
-        "name": "University JFC Champollion",
-        "dates": "2006",
-        "location": "Albi",
+        "name": "Albi University",
+        "dates": "Jun 2006",
+        "location": "Albi (France)",
         "majors": ["Ergonomics"],
         "degree": "BACHELORS",
         "url": "https://www.univ-jfc.fr/"
     }, {
-        "name": "University Toulouse 3",
-        "dates": "2003",
-        "location": "Toulouse",
+        "name": "Toulouse 3 University",
+        "dates": "Jun 2003",
+        "location": "Toulouse (France)",
         "majors": ["Management of companies and administrations"],
-        "degree": "DUT (A two-year technical degree)",
+        "degree": "Associates degree",
         "url": "http://www.univ-tlse3.fr/dut-gestion-des-entreprises-et-des-administrations-sites-de-toulouse--801.kjsp"
     }],
     "onlineCourses": [{
         "title": "Front-End Web Developer Nanodegree",
         "school": "Udacity",
-        "dates": "september 2016",
+        "dates": "Jan 2017",
         "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001",
         "lessons": ["Intro to HTML and CSS", "Sizing Elements", "HTMl Syntax", "CSS Syntax", "Responsive Web Design fundamentals", "Responsive Images", "Javascript Basics", "Intro to jQuery"]
-    }
+    },
+    {
+      "title": "React Nanodegree",
+      "school": "Udacity",
+      "dates": "in progress",
+      "url": "https://www.udacity.com/course/react-nanodegree--nd019",
+      "lessons": ["React Fundamentals", "React & Redux", "React Native"]
+  }
     ]
 };
 
